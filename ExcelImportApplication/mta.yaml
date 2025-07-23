@@ -1,0 +1,16 @@
+ID: excel-import-application
+_schema-version: "3.2"
+version: 0.0.1
+
+modules:
+  - name: excel-import-application-java
+    type: java
+    path: .
+    parameters:
+      buildpack: sap_java_buildpack
+      memory: 1G
+    properties:
+      JAVA_OPTS: "-Xmx512m"
+    requires: []
+
+resources: []
